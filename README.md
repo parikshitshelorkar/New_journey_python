@@ -21,7 +21,3 @@ This repository reflects my progress, problem-solving approach, and hands-on cod
 
 ---
 
-## 🚀 How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/parikshitshelorkar/New_journey_python.git
