@@ -1,0 +1,4 @@
+Hi here are 10 characters
+Hello\tWorld
+This is a test.\n
+\tPython Programming
