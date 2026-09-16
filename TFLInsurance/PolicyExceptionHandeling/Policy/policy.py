@@ -39,4 +39,13 @@ class Policy:
                 "Policy not found"
             )
         return cls.policies[policy_number]
+
+    @classmethod
+    def pay_premium(cls, policy_number, amount):
+        policy = cls.find_policy(policy_number)
+        if policy.policy_type == "Expired":
+            raise PolicyExpiredException(
+                "Cannot pay premium for expired policy"
+            )
+        policy.premium += amount
     
