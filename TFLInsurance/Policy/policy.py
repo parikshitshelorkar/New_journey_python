@@ -11,3 +11,4 @@ class Policy:
         self.customer_id = customer_id
         self.policy_type = policy_type
         self.premium = premium
+        
