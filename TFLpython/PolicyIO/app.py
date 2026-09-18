@@ -1,7 +1,7 @@
 import json
 import policy_repository
 
-
+########## Generalize code ###############
 with open ("policies.json", "r") as file:
     policies = json.load(file)
     
@@ -35,10 +35,8 @@ def find_policy(policy_number):
             print(policy)
     return None
 
-
 policy = find_policy("POL1001")
 print(policy)
-
 #exception handeling
 try:
 
@@ -55,7 +53,7 @@ except json.JSONDecodeError:
     policies = []
 
 
-################
+############ Modular code separating policy_repository ###########
 repository = policy_repository.PolicyRepository("policies.json")
 policies = repository.get_all()
 print(policies)
