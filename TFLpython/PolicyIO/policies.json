@@ -1,0 +1,26 @@
+[
+    {
+        "policy_number": "POL1001",
+        "customer_name": "Sneha",
+        "premium": 25000,
+        "status": "Active"
+    },
+    {
+        "policy_number": "POL1002",
+        "customer_name": "Rahul",
+        "premium": 32000,
+        "status": "Active"
+    },
+    {
+        "policy_number": "POL1003",
+        "customer_name": "Amit",
+        "premium": 18000,
+        "status": "Active"
+    },
+    {
+        "policy_number": "POL1003",
+        "customer_name": "Amit",
+        "premium": 18000,
+        "status": "Active"
+    }
+]
