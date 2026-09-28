@@ -1,14 +1,13 @@
 import socket
 import threading
 
-HOST = "192.168.1.44"
+HOST = "192.168.1.81"
 PORT = 5000
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((HOST, PORT))
 
 print("Connected to server")
-
 
 def receive_messages():
     while True:
@@ -23,20 +22,16 @@ def receive_messages():
         except:
             break
 
-
-thread = threading.Thread(target=receive_messages, daemon=True)
+thread = threading.Thread(target=receive_messages)
 thread.start()
 
 while True:
-    try:
-        message = input("You: ")
+    message = input("You: ")
 
-        if message.lower() == "exit":
-            client.send("exit".encode())
-            break
+    if message.lower() == "exit":
+        client.send("exit".encode())
+        break
 
-        client.send(message.encode())
-    except:
-        print("connection lost")
-        break   
+    client.send(message.encode())
+
 client.close()
